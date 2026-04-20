@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyovenv/
+
+
+venv/
+.env/
+.venv/
+
+data/
+*.csv
+*.xlsx
+*.json
+
+.idea/
