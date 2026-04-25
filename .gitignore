@@ -2,7 +2,6 @@ __pycache__/
 *.pyc
 *.pyovenv/
 
-
 venv/
 .env/
 .venv/
@@ -13,3 +12,8 @@ data/
 *.json
 
 .idea/
+
+.agents/
+.specify/
+AGENTS.md
+
