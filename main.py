@@ -21,13 +21,13 @@ if __name__ == '__main__':
         out_path
     )
 
-    data = DataPreprocessing(out_path, "PM2.5")
-    output_path_name = "/home/reda/AQI/data/processed/processed_v1"
-    processed_data = data.process("/home/reda/AQI/data/processed/processed_v1")
+    data = DataPreprocessing(out_path, "AQI")
+    output_path_name = "/home/reda/AQI/data/processed/processedM_v1"
+    processed_data = data.process("/home/reda/AQI/data/processed/processedM_v1")
+
 
     dataset = TimeSeriesDataset(output_path_name)
     X_train,y_train, X_test, y_test = dataset.get_data()
-
 
     # config
     input_size = X_train.shape[2]
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     num_layers = 2
 
     batch_size = 32
-    epochs = 100
+    epochs = 10
     lr = 0.001
 
 
